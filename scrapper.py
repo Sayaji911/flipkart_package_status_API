@@ -1,10 +1,5 @@
 import requests as _requests
 import bs4 as _bs4
-from typing import List, Dict
-import json as _json
-import itertools
-import csv
-from fastapi import HTTPException, status
 
 
 def _generate_url(track_id: str) -> str:
@@ -49,6 +44,7 @@ def complete_tracking(track_id: str):
 
 def current_status(track_id: str):
     headers = []
+    zipped_one = None
     url = _generate_url(track_id)
     page = _get_page(url)
     # gets table from the url
@@ -70,7 +66,3 @@ def current_status(track_id: str):
             return _data_one
     except IndexError:
         return None
-
-print(complete_tracking("FMPP0701772830"))
-
-
