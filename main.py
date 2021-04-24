@@ -22,4 +22,4 @@ async def com_tracking(track_id: str):
     if not scrapper.complete_tracking(track_id):
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Invalid Tracking ID")
     else:
-        return scrapper.current_status(track_id)
+        return scrapper.complete_tracking(track_id)
