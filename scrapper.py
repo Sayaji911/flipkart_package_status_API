@@ -67,4 +67,3 @@ def current_status(track_id: str):
     except IndexError:
         return None
 
-print(complete_tracking("FMPP0701772857"))
