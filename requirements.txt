@@ -4,3 +4,4 @@ fastapi==0.63.0
 gunicorn
 uvloop
 httptools
+uvicorn
