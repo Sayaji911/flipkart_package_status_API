@@ -3,6 +3,6 @@ requests==2.25.1
 beautifulsoup4==4.9.3
 fastapi==0.63.0
 uvicorn
-uviloop
+uvloop
 httptools
 gunicorn
