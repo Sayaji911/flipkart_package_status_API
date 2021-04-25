@@ -1,7 +1,8 @@
+twilio==6.57.0
 requests==2.25.1
 beautifulsoup4==4.9.3
 fastapi==0.63.0
-gunicorn
-uvloop
-httptools
 uvicorn
+uviloop
+httptools
+gunicorn

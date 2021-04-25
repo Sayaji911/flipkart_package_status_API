@@ -64,6 +64,8 @@ def current_status(track_id: str):
                 zipped_one = dict(zip(headers, row_data))
             _data_one.append(zipped_one)
             return _data_one
-    except IndexError:
+    except (AttributeError, IndexError):
         return None
+    except (ConnectionError, ConnectionAbortedError, ConnectionRefusedError):
+        return 0
 
