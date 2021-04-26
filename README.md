@@ -1,11 +1,45 @@
-# flipkart_package_status_API
-This is a flipkart package tracking API which tracks the status of the package from EKart.com which is flipkart's tracking service
-***Windows Users***
-In command terminal run the following command
+# Flipkart Package Tracker Bot
+
+Whatsapp Bot that gives Delivery status of Package from Flipkart
+## Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+
+### Installing
+
+A step by step series of examples that tell you how to get a development env running
+
+Say what the step will be
 
 ```
-python -m venv env
-env/Scripts/activate
-python -m pip install -U pip
+python3 -m venv <myenvname>
+source env/bin/activate
 pip install -r requirements.txt
 ```
+
+## Running the app
+```
+uvicorn main:app --reload
+```
+
+## Deployment
+
+I've deployed the app on Microsoft Azure and used Twilio Sandbox to run the bot
+```
+gunicorn -w 4 -k uvicorn.workers.UvicornWorker main:app
+```
+## Built With
+
+* [FastAPI](https://fastapi.tiangolo.com/) - The web framework used
+* [Beautifulsoup](https://pypi.org/project/beautifulsoup4/) - Powerful Web Scrapper
+* [Twilio](https://www.twilio.com/) - Messaging API
+* [Microsoft Azure](https://azure.microsoft.com/) - Cloud
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Acknowledgments
+
+* People of FastAPI discord server
+
