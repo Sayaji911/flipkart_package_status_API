@@ -36,8 +36,8 @@ gunicorn -w 4 -k uvicorn.workers.UvicornWorker main:app
 * [Microsoft Azure](https://azure.microsoft.com/) - Cloud
 
 ## Screenshots
-![image](https://user-images.githubusercontent.com/22417162/116059017-0bec2100-a69e-11eb-843e-35b572dbd746.png)
-![image](https://user-images.githubusercontent.com/22417162/116059100-20301e00-a69e-11eb-8015-87f53920587e.png)
+![image](https://user-images.githubusercontent.com/22417162/116059704-bcf2bb80-a69e-11eb-81ad-e558df6df68a.png)
+
 
 
 
